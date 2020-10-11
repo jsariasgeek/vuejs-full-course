@@ -5,6 +5,12 @@ import '@/router'
 import router from '@/router'
 import { dollarFilter } from '@/filters'
 import { percentFilter } from './filters'
+import Chart from 'chart.js'
+import Chartick from 'vue-chartkick'
+import { VueSpinners } from '@saeris/vue-spinners'
+
+Vue.use(VueSpinners)
+Vue.use(Chartick.use(Chart))
 
 Vue.filter('dollar', dollarFilter)
 Vue.filter('percent', percentFilter)
